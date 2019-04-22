@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.10)
+project(pmtool)
+
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(pmtool main.cpp src/utils.h src/HalfEdge.cpp src/HalfEdge.h src/Polygon.cpp src/Polygon.h src/Point.cpp src/Point.h src/Vector3D.cpp src/Vector3D.h src/PointRepository.cpp src/PointRepository.h src/PointDataGenerator.cpp src/PointDataGenerator.h src/TestCaseGenerator.cpp src/TestCaseGenerator.h src/Polyhedron.cpp src/Polyhedron.h src/SimplePolytopeCheckingHelper.cpp src/SimplePolytopeCheckingHelper.h src/avl.cpp src/avl.h src/BoundingSphere.cpp src/BoundingSphere.h src/PolyhedronGenerator.cpp src/PolyhedronGenerator.h src/Matrix.cpp src/Matrix.h src/simplices_package/Simplex.cpp src/simplices_package/Simplex.h src/simplices_package/SimplexRepository.cpp src/simplices_package/SimplexRepository.h src/simplices_package/Filtration.cpp src/simplices_package/Filtration.h src/simplices_package/SimplicialComplexBuilder.cpp src/simplices_package/SimplicialComplexBuilder.h src/simplices_package/SweepHiperPlane.cpp src/simplices_package/SweepHiperPlane.h src/simplices_package/CoverSphereTree.cpp src/simplices_package/CoverSphereTree.h src/testing_simplices/CoverSphereTreeTestCaseGenerator.cpp src/testing_simplices/CoverSphereTreeTestCaseGenerator.h src/simplices_package/KnnClassificator.cpp src/simplices_package/KnnClassificator.h src/simplices_package/SphereDraw.cpp src/simplices_package/SphereDraw.h src/testing_simplices/SystemInformation.cpp src/testing_simplices/SystemInformation.h src/simplices_package/SimplexTree.cpp src/simplices_package/SimplexTree.h src/testing_simplices/SimplexTreeTestCaseGenerator.cpp src/testing_simplices/SimplexTreeTestCaseGenerator.h src/testing_simplices/SCBuilderTestCaseGenerator.cpp src/testing_simplices/SCBuilderTestCaseGenerator.h src/simplices_package/SphereDraw.cpp src/simplices_package/SphereDraw.h src/testing_simplices/SweepHiperPlaneTestCaseGenerator.cpp src/testing_simplices/SweepHiperPlaneTestCaseGenerator.h src/triangulation.cpp src/triangulation.h src/vertex_avl_tree.cpp src/vertex_avl_tree.h src/TriangulationTestCaseGenerator.cpp src/TriangulationTestCaseGenerator.h src/DrawTriangulation.cpp src/DrawTriangulation.h src/HalfEdgeTestCaseGenerator.cpp src/HalfEdgeTestCaseGenerator.h)
+
+include_directories(GL/)
+
+target_link_libraries(pmtool -lglut -lGL -lGLU)
+
+target_link_libraries(${PROJECT_NAME} )

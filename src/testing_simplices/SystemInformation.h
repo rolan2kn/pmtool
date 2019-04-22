@@ -1,0 +1,10 @@
+//
+// Created by rkindela on 30-01-19.
+//
+
+#ifndef PMTOOL_SYSTEMINFORMATION_H
+#define PMTOOL_SYSTEMINFORMATION_H
+
+
+
+#endif //PMTOOL_SYSTEMINFORMATION_H
